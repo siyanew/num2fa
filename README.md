@@ -5,6 +5,13 @@
 
 This is a Golang library that helps you convert numbers to Farsi(Persian) words.
 
+## Installation
+You can install this library using the `go get` command:
+
+```shell
+go get github.com/siyanew/num2fa
+```
+
 ## Usage
 To use the library, simply import it into your project and call the Num2fa function, passing in the number you want to convert as an argument. For example:
 ```go
@@ -20,9 +27,6 @@ fmt.Println(num2fa.Convert(-1234567890))
 ```
 
 The function returns a string representing the Farsi words corresponding to the input number.
-
-## Supported Range
-This library can convert numbers in the range -2147483648 to 2147483647. If the input number is outside this range, the function will return an empty string.
 
 ## License
 This library is released under the MIT License. Please see the LICENSE file for more details.
