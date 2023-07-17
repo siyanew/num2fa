@@ -1,6 +1,9 @@
-package main
+package num2fa_test
 
-import "testing"
+import (
+	"github.com/siyanew/num2fa"
+	"testing"
+)
 
 func TestNum2fa(t *testing.T) {
 	testCases := []struct {
@@ -35,16 +38,10 @@ func TestNum2fa(t *testing.T) {
 		{100000000, "صد میلیون"},
 		{1000000000, "یک میلیارد"},
 		{-1234567890, "منفی یک میلیارد و دویست و سی و چهار میلیون و پانصد و شصت و هفت هزار و هشتصد و نود"},
-		//{10000000000, "ده میلیارد"},
-		//{100000000000, "صد میلیارد"},
-		//{1000000000000, "یک تریلیون"},
-		//{10000000000000, "ده تریلیون"},
-		//{100000000000000, "صد تریلیون"},
-		//{1000000000000000, "یک کوآدریلیون"},
 	}
 
 	for _, tc := range testCases {
-		if actual := Num2fa(tc.input); actual != tc.expected {
+		if actual := num2fa.Convert(tc.input); actual != tc.expected {
 			t.Errorf("Num2fa(%d) = %s; expected %s", tc.input, actual, tc.expected)
 		}
 	}

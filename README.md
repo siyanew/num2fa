@@ -1,4 +1,8 @@
+![Test](https://github.com/siyanew/num2fa/actions/workflows/test.yml/badge.svg)
+[![Go Reference](https://pkg.go.dev/badge/github.com/siyanew/num2fa.svg)](https://pkg.go.dev/github.com/siyanew/num2fa)
+
 # Num2Fa - Number to Farsi Words
+
 This is a Golang library that helps you convert numbers to Farsi(Persian) words.
 
 ## Usage
@@ -7,11 +11,11 @@ To use the library, simply import it into your project and call the Num2fa funct
 import "github.com/siyanew/num2fa"
 
 func main() {
-    // Prints "سیصد هفتاد و شش"
-    fmt.Println(num2fa.Num2fa(376))
+// Prints "سیصد هفتاد و شش"
+fmt.Println(num2fa.Convert(376))
 
-    // Prints "منفی یک میلیارد و دویست و سی و چهار میلیون و پانصد و شصت و هفت هزار و هشتصد و نود"
-    fmt.Println(num2fa.Num2fa(-1234567890))	
+// Prints "منفی یک میلیارد و دویست و سی و چهار میلیون و پانصد و شصت و هفت هزار و هشتصد و نود"
+fmt.Println(num2fa.Convert(-1234567890))
 }
 ```
 

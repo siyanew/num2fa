@@ -1,4 +1,4 @@
-package main
+package num2fa
 
 import (
 	"strings"
@@ -101,7 +101,7 @@ func threeDigitToPersianWord(number int) string {
 	return strings.Join(result, " و ")
 }
 
-func Num2fa(number int) string {
+func Convert(number int) string {
 	if number == 0 {
 		return "صفر"
 	}
